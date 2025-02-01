@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VISION AND VITALITY CENTER</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header and Navigation -->
+    <header>
+      <div class="header-container">
+        <!-- Logo & Clinic Name -->
+        <div class="branding">
+          <img src="images/logo.jpg" alt="Clinic Logo" class="clinic-logo" />
+          <span class="clinic-name">VISION AND VITALITY CENTER</span>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#quotes">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#doctors-contact">Doctors & Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Aesthetic Quotes Section with Background Image -->
+    <section id="quotes">
+      <div class="quotes-overlay"></div>
+      <div class="quote-container">
+        <!-- Quote 1 -->
+        <div class="quote-slide">
+          <p class="quote-text">
+            "Nurturing every life we touch, one sight at a time."
+          </p>
+          <p class="quote-author">- Vision and Vitality Center</p>
+        </div>
+        <!-- Quote 2 -->
+        <div class="quote-slide">
+          <p class="quote-text">
+            "When you see the world clearly, you can change it profoundly."
+          </p>
+          <p class="quote-author">- Vision and Vitality Center</p>
+        </div>
+        <!-- Quote 3 -->
+        <div class="quote-slide">
+          <p class="quote-text">
+            "Empowering lives through vision and rehabilitation—mind, body, and
+            soul."
+          </p>
+          <p class="quote-author">- Our Team</p>
+        </div>
+      </div>
+      <div class="quote-nav">
+        <span class="prev-quote" onclick="changeQuote(-1)">&#10094;</span>
+        <span class="next-quote" onclick="changeQuote(1)">&#10095;</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About Our Clinic</h2>
+        <p>
+          The Vision and Vitality Center was founded with the mission of
+          improving the quality of life for individuals experiencing vision
+          loss. We also emphasize child rehabilitation, recognizing that early
+          intervention is crucial for children with neurodevelopmental
+          challenges such as Autism, ADHD, and Sensory Processing Disorder.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <!-- Rehabilitation Card -->
+          <div class="service-card">
+            <h3>Rehabilitation</h3>
+            <div class="service-columns">
+              <ul>
+                <li>Autism Spectrum Disorder</li>
+                <li>Attention-Deficit Hyperactivity Disorder</li>
+                <li>Sensory Processing Disorder</li>
+                <li>Developmental Delay</li>
+              </ul>
+              <ul>
+                <li>ADL Training</li>
+                <li>Handwriting Difficulties</li>
+                <li>Down Syndrome</li>
+                <li>Speech Problems</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Eye Care Card -->
+          <div class="service-card">
+            <h3>Eye Care</h3>
+            <div class="service-columns">
+              <ul>
+                <li>Comprehensive Eye Examination</li>
+                <li>Vision Therapy</li>
+                <li>Contact Lens</li>
+                <li>Soft Contact Lens</li>
+                <li>Cosmetic Contact Lens</li>
+              </ul>
+              <ul>
+                <li>Prosthetic Contact Lens</li>
+                <li>Orthokeratology</li>
+                <li>Special Contact Lens</li>
+                <li>Low Vision Care</li>
+                <li>Prescription & Power Glasses</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery-grid">
+      <h2>Gallery</h2>
+      <div class="grid-container">
+        <img src="images/gallery1.jpg" alt="Gallery Image 1" />
+        <img src="images/gallery2.jpg" alt="Gallery Image 2" />
+        <img src="images/gallery3.jpg" alt="Gallery Image 3" />
+        <img src="images/gallery4.jpg" alt="Gallery Image 4" />
+        <img src="images/gallery5.jpg" alt="Gallery Image 5" />
+        <img src="images/gallery6.jpg" alt="Gallery Image 5" />
+        <!-- Add more images as needed -->
+      </div>
+    </section>
+
+    <!-- Doctors & Contact Section Side by Side -->
+    <section id="doctors-contact">
+      <div class="container">
+        <div class="row">
+          <!-- Doctors Column -->
+          <div class="column doctors-column">
+            <h2>Meet Our Consultants</h2>
+            <div class="doctor-grid">
+              <div class="doctor-card">
+                <img
+                  src="images/aadil.jpg"
+                  alt="Dr. Mohammad Aadil Shahab"
+                  class="doctor-photo"
+                />
+                <h3>Dr. Mohammed Aadil Shahab</h3>
+                <p class="doctor-title">
+                  Consultant Occupational Therapist, BOTh (Santosh Medical
+                  College)
+                </p>
+              </div>
+
+              <div class="doctor-card">
+                <img
+                  src="images/simi.jpg"
+                  alt="Simi Afroz"
+                  class="doctor-photo"
+                />
+                <h3>Simi Afroz</h3>
+                <p class="doctor-title">
+                  Eye Care Specialist, B.Optom (AIIMS, New Delhi), M.Optom
+                  (Amity University)
+                </p>
+              </div>
+              <!-- Add more .doctor-card elements if you have more consultants -->
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="column contact-column">
+            <h2>Contact Us</h2>
+            <form action="/submit_form" method="POST">
+              <label for="name">Name:</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              /><br /><br />
+
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              /><br /><br />
+
+              <label for="phone">Phone Number:</label><br />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Your Phone Number"
+                required
+              /><br /><br />
+
+              <label for="message">Message:</label><br />
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea
+              ><br /><br />
+
+              <button type="submit">Submit</button>
+            </form>
+            <div class="contact-info">
+              <p>
+                <strong>Address:</strong> 1st Floor, 4/1257, A-1, Shafi Manzil,
+                Medical Road, Aligarh, UP
+              </p>
+              <p><strong>Phone:</strong> (+91) 8750755672, (+91) 7836825231</p>
+              <p>
+                <strong>Email:</strong>
+                <a href="mailto:visionandvitalitycenter@gmail.com"
+                  >visionandvitalitycenter@gmail.com</a
+                >
+              </p>
+              <p><strong>Hours:</strong> Mon-Sat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 VISION AND VITALITY CENTER - All Rights Reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
